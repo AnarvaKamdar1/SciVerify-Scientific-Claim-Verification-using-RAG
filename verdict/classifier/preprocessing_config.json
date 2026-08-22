@@ -1,0 +1,13 @@
+{
+    "document_token_limit": 200,
+    "tokenizer": "allenai/scibert_scivocab_uncased",
+    "label2id": {
+        "CONTRADICT": 0,
+        "SUPPORT": 1
+    },
+    "id2label": {
+        "0": "CONTRADICT",
+        "1": "SUPPORT"
+    },
+    "aggregation_rule": "SUPPORT if all evidence sentences are SUPPORT; CONTRADICT if all evidence sentences are CONTRADICT; mixed-label documents skipped"
+}
