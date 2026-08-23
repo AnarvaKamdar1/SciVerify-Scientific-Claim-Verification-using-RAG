@@ -1,5 +1,0 @@
-Method,Recall@3,Recall@5,Recall@7,Recall@10,Recall@20,Recall@50
-BM25,0.6861,0.7469,0.7812,0.8128,0.8517,0.8841
-BM25 + query expansion,0.5372,0.6758,0.7239,0.7842,0.8459,0.8799
-BM25 + query expansion + reranking,0.649,0.7124,0.7648,0.7929,0.8521,0.8799
-BM25 + reranking,0.7278,0.7697,0.7988,0.8387,0.8691,0.8841
