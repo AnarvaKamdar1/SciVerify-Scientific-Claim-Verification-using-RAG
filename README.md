@@ -2,7 +2,7 @@
 
 A retrieval-augmented pipeline for verifying scientific claims against evidence from the SciFact scientific literature corpus.
 
-[Overview] • [Architecture] • [Experiments] • [Results]
+[Overview] • [Architecture] • [Experiments] • [Results] • [References]
 
 ---
 
