@@ -29,6 +29,17 @@ The pipeline combines:
 
 ---
 
+## Key Features
+
+| Feature | Description |
+|---------|-------------|
+| **Evidence Retrieval** | Uses BM25 algorithm to initially retrieve candidate documents from the SciFact corpus. |
+| **Hybrid Re-ranking** | Refines candidate document ranking by combining cross-encoder semantic scores with BM25 lexical scores. |
+| **Verdict Classification** | Utilizes domain-specific models like SciBERT and BioBERT to classify evidence as SUPPORT, CONTRADICT, or NEI. |
+| **Grounded Generation** | Leverages RAG/LLM to produce grounded explanations with explicit citations to retrieved documents. |
+
+---
+
 ## Architecture
 SciVerify follows a three-stage pipeline consisting of evidence retrieval,
 claim-evidence verification, and grounded response generation.
