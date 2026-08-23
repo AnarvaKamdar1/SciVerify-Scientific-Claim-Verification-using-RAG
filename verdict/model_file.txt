@@ -1,3 +1,0 @@
-Available at - 
-
-https://huggingface.co/Anarva/SciBERT_trained_model_weights
