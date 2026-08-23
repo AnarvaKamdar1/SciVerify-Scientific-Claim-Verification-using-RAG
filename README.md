@@ -116,23 +116,32 @@ Representative outputs from the final pipeline are available in
 ### Example
 
 **Claim:**  
-> ADAR1 binds to Dicer to cleave pre-miRNA.
+> A deficiency of vitamin B12 increases blood levels of homocysteine.
 
 **Retrieved evidence and verdicts:**
 
-| Document | Verdict | Support Probability |
-|---|---|---:|
-| ADAR1 Forms a Complex with Dicer... | SUPPORT | 0.6795 |
-| ... | SUPPORT | 0.6168 |
-| ... | ... | ... |
+| Document | Verdict | Support Probability | Contradict Probability
+|---|---|---|---:|
+| British Journal of Nutrition... | SUPPORT | 0.5093 | 0.4903 |
+| Homocysteine and the risk of... | CONTRADICT | 0.4228 | 5772 |
+| Effect of homocysteine... | CONTRADICT | 0.3810 | 0.6190 |
+| Gene--nutrition interactions... | CONTRADICT | 0.4792 | 0.5208 |
+| The effect of folate... | CONTRADICT | 0.4870 | 0.5130 |
 
 The final LLM response synthesizes the retrieved evidence and explicitly
 references the source documents used to support its explanation.
 
 > **Example generated response:**  
-> The retrieved evidence supports the claim that ADAR1 interacts with Dicer
-> in the context of pre-miRNA processing, with the relevant evidence coming
-> from the retrieved scientific abstracts. [Document 1]
+> The evidence is mixed with respect to the claim that a deficiency of vitamin B12 increases blood levels of homocysteine.
+
+Some studies suggest that a high intake of folate can decrease plasma homocysteine levels (Document 1), while others indicate that elevated homocysteine levels are associated with increased risk of ischemic stroke, with no significant predictive effect of mild elevations of homocysteine (Document 2). 
+
+Additionally, a study on patients with advanced chronic kidney disease found that treatment with high doses of folic acid and B vitamins did not lower mortality or reduce the incidence of vascular disease (Document 3). 
+
+A meta-analysis of randomized controlled trials found that folic acid supplementation may have a modest benefit on stroke prevention in regions without folate fortification (Document 5). 
+
+However, the relationship between vitamin B12 deficiency and homocysteine levels is not directly addressed in any of the provided documents.
+
 
 ### End-to-End Output
 
