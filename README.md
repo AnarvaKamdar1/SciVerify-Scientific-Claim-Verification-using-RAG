@@ -22,7 +22,8 @@ The pipeline combines:
 - **BM25** for scientific evidence retrieval
 - **SciBERT** for claim-evidence verdict classification
 - **Query expansion** experiments for improving retrieval
-- **Transformer-based verdict models** for improving classification
+- **Cross-encoder re-ranking** to improve the ordering of retrieved candidates using joint claim-document relevance scoring
+- **Transformer-based verdict model** to classify each retrieved document as supporting or contradicting the claim
 - **RAG/LLM-based generation** for producing evidence-grounded explanations
 - Retrieval and verification evaluation through quantitative metrics and ablation studies
 
