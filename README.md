@@ -37,7 +37,7 @@ claim-evidence verification, and grounded response generation.
 
 ## Ablation Experiments
 
-### Query Expansion
+### 1. Query Expansion
 
 To investigate whether pseudo-relevance feedback could improve scientific
 evidence retrieval, two query expansion strategies were evaluated:
@@ -49,7 +49,7 @@ Both approaches were evaluated against the same BM25 retrieval baseline using
 Recall, Mean Reciprocal Rank (MRR), and Normalized Discounted Cumulative Gain
 (NDCG) at multiple retrieval depths.
 
-### Recall
+#### 1. a) Recall
 
 | PRF with KL |  |  |  |  |  |  |
 |---|---:|---:|---:|---:|---:|---:|
@@ -67,7 +67,7 @@ Recall, Mean Reciprocal Rank (MRR), and Normalized Discounted Cumulative Gain
 | BM25 + QE + Reranking | 0.6689 | 0.7359 | 0.7717 | 0.8049 | 0.8560 | 0.8767 |
 | BM25 + Reranking | **0.7278** | **0.7697** | **0.7988** | **0.8387** | **0.8691** | **0.8841** |
 
-### MRR
+### 1. b) MRR
 
 | PRF with KL |  |  |  |  |  |  |
 |---|---:|---:|---:|---:|---:|---:|
@@ -85,7 +85,7 @@ Recall, Mean Reciprocal Rank (MRR), and Normalized Discounted Cumulative Gain
 | BM25 + QE + Reranking | 0.6061 | 0.6194 | 0.6251 | 0.6290 | 0.6326 | 0.6334 |
 | BM25 + Reranking | **0.6556** | **0.6646** | **0.6693** | **0.6741** | **0.6759** | **0.6763** |
 
-### NDCG
+### 1. c) NDCG
 
 | PRF with KL |  |  |  |  |  |  |
 |---|---:|---:|---:|---:|---:|---:|
@@ -102,6 +102,10 @@ Recall, Mean Reciprocal Rank (MRR), and Normalized Discounted Cumulative Gain
 | BM25 + Query Expansion | 0.6057 | 0.6376 | 0.6511 | 0.6670 | 0.6746 | 0.6822 |
 | BM25 + Query Expansion + Reranking | 0.6182 | 0.6470 | 0.6607 | 0.6715 | 0.6854 | 0.6897 |
 | **BM25 + Reranking** | **0.6690** | **0.6865** | **0.6979** | **0.7111** | **0.7194** | **0.7228** |
+
+### 2. Verification Classifiers
+
+
 
 ## Results
 
