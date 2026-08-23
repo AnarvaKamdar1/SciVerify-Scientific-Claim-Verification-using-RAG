@@ -131,16 +131,16 @@ Representative outputs from the final pipeline are available in
 The final LLM response synthesizes the retrieved evidence and explicitly
 references the source documents used to support its explanation.
 
-> **Example generated response:**  
+**Example generated response:**  
 > The evidence is mixed with respect to the claim that a deficiency of vitamin B12 increases blood levels of homocysteine.
 
-Some studies suggest that a high intake of folate can decrease plasma homocysteine levels (Document 1), while others indicate that elevated homocysteine levels are associated with increased risk of ischemic stroke, with no significant predictive effect of mild elevations of homocysteine (Document 2). 
+> Some studies suggest that a high intake of folate can decrease plasma homocysteine levels (Document 1), while others indicate that elevated homocysteine levels are associated with increased risk of ischemic stroke, with no significant predictive effect of mild elevations of homocysteine (Document 2). 
 
-Additionally, a study on patients with advanced chronic kidney disease found that treatment with high doses of folic acid and B vitamins did not lower mortality or reduce the incidence of vascular disease (Document 3). 
+> Additionally, a study on patients with advanced chronic kidney disease found that treatment with high doses of folic acid and B vitamins did not lower mortality or reduce the incidence of vascular disease (Document 3). 
 
-A meta-analysis of randomized controlled trials found that folic acid supplementation may have a modest benefit on stroke prevention in regions without folate fortification (Document 5). 
+> A meta-analysis of randomized controlled trials found that folic acid supplementation may have a modest benefit on stroke prevention in regions without folate fortification (Document 5). 
 
-However, the relationship between vitamin B12 deficiency and homocysteine levels is not directly addressed in any of the provided documents.
+> However, the relationship between vitamin B12 deficiency and homocysteine levels is not directly addressed in any of the provided documents.
 
 
 ### End-to-End Output
