@@ -220,6 +220,8 @@ The model weights after training will be available at https://huggingface.co/Ana
 
 The dataset was downloaded from https://github.com/allenai/scifact .
 
+The methods and techniques are discussed in [methodology](methodology.md)
+
 
 
 
