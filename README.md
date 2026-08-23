@@ -29,6 +29,10 @@ The pipeline combines:
 ---
 
 ## Architecture
+SciVerify follows a three-stage pipeline consisting of evidence retrieval,
+claim-evidence verification, and grounded response generation.
+
+![SciVerify Architecture](architecture.png)
 
 ## Experiments
 
