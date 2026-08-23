@@ -216,9 +216,9 @@ documents, verdict probabilities, and grounded responses, can be found in
 
 ## References
 
-The model weights after training will be available at https://huggingface.co/Anarva/SciVerify_Model_Files .
+The model weights after training will be available [here](https://huggingface.co/Anarva/SciVerify_Model_Files).
 
-The dataset was downloaded from https://github.com/allenai/scifact .
+The dataset was downloaded from [here](https://github.com/allenai/scifact).
 
 The methods and techniques are discussed in [methodology](methodology.md)
 
