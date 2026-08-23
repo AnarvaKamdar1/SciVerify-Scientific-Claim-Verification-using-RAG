@@ -1,4 +1,4 @@
-<p align="center"> # SciVerify — Scientific Claim Verification using RAG </p>
+# <p align="center"> SciVerify — Scientific Claim Verification using RAG </p>
 
 A retrieval-augmented pipeline for verifying scientific claims against evidence from the SciFact scientific literature corpus.
 
