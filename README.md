@@ -1,4 +1,4 @@
-# SciVerify — Scientific Claim Verification using RAG
+<p align="center"> # SciVerify — Scientific Claim Verification using RAG </p>
 
 A retrieval-augmented pipeline for verifying scientific claims against evidence from the SciFact scientific literature corpus.
 
@@ -33,7 +33,39 @@ The pipeline combines:
 SciVerify follows a three-stage pipeline consisting of evidence retrieval,
 claim-evidence verification, and grounded response generation.
 
-![SciVerify Architecture](architecture.png)
+```mermaid
+graph TD
+    A[Scientific Claim] --> B(Stage 1 Evidence Retrieval)
+    
+    subgraph Stage 1 Retrieval
+        B --> C[BM25 Initial Retrieval]
+        C --> D[Query Expansion]
+        D --> E[PRF with KL or RM3]
+        E --> F[Hybrid Cross-Encoder Re-ranking]
+    end
+    
+    F --> G[Top-K Candidate Documents]
+    
+    G --> H(Stage 2 Claim-Evidence Verification)
+    
+    subgraph Stage 2 Verification
+        H --> I[Verdict Classifier]
+        I --> J[SciBERT]
+        I --> K[BioBERT]
+        J --> L[Predict SUPPORT / CONTRADICT / NEI]
+        K --> L
+    end
+    
+    L --> M(Stage 3 Grounded Response Generation)
+    G --> M
+    
+    subgraph Stage 3 Generation
+        M --> N[RAG System]
+        N --> O[LLM Synthesizes Evidence]
+    end
+    
+    O --> P[Final Explanation with Citations]
+```
 
 ## Ablation Experiments
 
