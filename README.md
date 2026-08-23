@@ -39,9 +39,7 @@ graph TD
     
     subgraph Stage 1 Retrieval
         B --> C[BM25 Initial Retrieval]
-        C --> D[Query Expansion]
-        D --> E[PRF with KL or RM3]
-        E --> F[Hybrid Cross-Encoder Re-ranking]
+        C --> F[Hybrid Cross-Encoder Re-ranking]
     end
     
     F --> G[Top-K Candidate Documents]
@@ -49,19 +47,15 @@ graph TD
     G --> H(Stage 2 Claim-Evidence Verification)
     
     subgraph Stage 2 Verification
-        H --> I[Verdict Classifier]
-        I --> J[SciBERT]
-        I --> K[BioBERT]
-        J --> L[Predict SUPPORT / CONTRADICT / NEI]
-        K --> L
+        H --> I[Verdict Classifier using BioBERT]
+        I --> L[Predict SUPPORT / CONTRADICT / NEI]
     end
     
     L --> M(Stage 3 Grounded Response Generation)
     G --> M
     
     subgraph Stage 3 Generation
-        M --> N[RAG System]
-        N --> O[LLM Synthesizes Evidence]
+        M --> O[LLM Synthesizes Evidence]
     end
     
     O --> P[Final Explanation with Citations]
