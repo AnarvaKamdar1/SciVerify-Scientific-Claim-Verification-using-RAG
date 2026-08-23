@@ -35,7 +35,7 @@ claim-evidence verification, and grounded response generation.
 
 ![SciVerify Architecture](architecture.png)
 
-## Experiments
+## Ablation Experiments
 
 ### Query Expansion
 
