@@ -14,16 +14,17 @@ contradicted by existing evidence.
 
 **SciVerify** is a scientific claim verification system built on the **SciFact**
 benchmark. Given a scientific claim, the system retrieves relevant scientific
-documents, determines whether the retrieved evidence supports or contradicts the
-claim, and generates a grounded explanation using retrieval-augmented generation.
+documents,re-ranks them for better lexical relevance and determines whether the
+retrieved evidence supports or contradicts the claim, and generates a 
+grounded explanation using retrieval-augmented generation with explicit citation.
 
 The pipeline combines:
 
 - **BM25** for scientific evidence retrieval
 - **Query expansion** experiments for improving retrieval
-- **Cross-encoder re-ranking** to improve the ordering of retrieved candidates using joint claim-document relevance scoring
+- **Hybrid cross-encoder re-ranking** that combines normalized BM25 and cross-encoder relevance scores to refine the ranking of candidate documents while preserving lexical relevance
 - **SciBERT** to classify each retrieved document as supporting or contradicting the claim
-- **RAG/LLM-based generation** for producing evidence-grounded explanations
+- **RAG/LLM-based generation** for producing evidence-grounded explanations with explicit citations to the retrieved documents
 - Retrieval and verification evaluation through quantitative metrics and ablation studies
 
 ---
