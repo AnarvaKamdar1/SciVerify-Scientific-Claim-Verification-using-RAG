@@ -2,7 +2,7 @@
 
 A retrieval-augmented pipeline for verifying scientific claims against evidence from the SciFact scientific literature corpus.
 
-[Overview] • [Methodology] • [Experiments] • [Results] • [Reproducibility]
+[Overview] • [Architecture] • [Experiments] • [Results]
 
 ---
 
@@ -28,47 +28,9 @@ The pipeline combines:
 
 ---
 
-## Pipeline
+## Architecture
 
-```text
-                         Scientific Claim
-                                │
-                                ▼
-                       ┌─────────────────┐
-                       │ Query Processing │
-                       └────────┬────────┘
-                                │
-                                ▼
-                       ┌─────────────────┐
-                       │ BM25 Retrieval  │
-                       │   SciFact      │
-                       └────────┬────────┘
-                                │
-                          Top-k Documents
-                                │
-                                ▼
-                       ┌─────────────────┐
-                       │ Evidence /      │
-                       │ Sentence        │
-                       │ Selection       │
-                       └────────┬────────┘
-                                │
-                                ▼
-                       ┌─────────────────┐
-                       │    SciBERT      │
-                       │ Verdict Model   │
-                       └────────┬────────┘
-                                │
-                     SUPPORT / CONTRADICT
-                                │
-                                ▼
-                       ┌─────────────────┐
-                       │   RAG / LLM     │
-                       │ Explanation     │
-                       └────────┬────────┘
-                                │
-                                ▼
-                       ┌─────────────────┐
-                       │ Final Claim     │
-                       │ Verification    │
-                       └─────────────────┘
+## Experiments
+
+## Results
+
