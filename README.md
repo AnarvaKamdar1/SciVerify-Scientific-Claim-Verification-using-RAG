@@ -108,7 +108,7 @@ Recall, Mean Reciprocal Rank (MRR), and Normalized Discounted Cumulative Gain
 #### 2. a) SciBERT:
 
 SciBERT Model is a pre-defined BERT model specialized for the SciFact Dataset.
-The claasification metrics recorded are - 
+The classification metrics recorded are - 
 
 | Class | Precision | Recall | F1-Score | Support |
 |:------|----------:|-------:|---------:|--------:|
@@ -119,7 +119,10 @@ The claasification metrics recorded are -
 | **Macro Avg** | **0.6705** | **0.6693** | **0.6675** | **179** |
 | **Weighted Avg** | **0.6960** | **0.6816** | **0.6868** | **179** |
 
-#### 2. b) BioBERT
+#### 2. b) BioBERT:
+
+BioBERT Model is another variant which has strong generalization capability.
+The classification metrics recorded are -
 
 | Class       | Precision | Recall | F1-Score | Support |
 |-------------|-----------|--------|----------|---------|
