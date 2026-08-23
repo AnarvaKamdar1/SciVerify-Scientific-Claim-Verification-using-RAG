@@ -116,31 +116,31 @@ Representative outputs from the final pipeline are available in
 ### Example
 
 **Claim:**  
-> A deficiency of vitamin B12 increases blood levels of homocysteine.
+> Dexamethasone decreases risk of postoperative bleeding.
 
 **Retrieved evidence and verdicts:**
 
-| Document | Verdict | Support Probability | Contradict Probability
+| Document Title | Verdict | Support Probability | Contradict Probability
 |---|---|---|---:|
-| British Journal of Nutrition... | SUPPORT | 0.5093 | 0.4903 |
-| Homocysteine and the risk of... | CONTRADICT | 0.4228 | 0.5772 |
-| Effect of homocysteine... | CONTRADICT | 0.3810 | 0.6190 |
-| Gene--nutrition interactions... | CONTRADICT | 0.4792 | 0.5208 |
-| The effect of folate... | CONTRADICT | 0.4870 | 0.5130 |
+| Dexamethasone and risk of nausea... | SUPPORT | 0.5584 | 0.4178 |
+| Dexamethasone decreases vomiting by... | SUPPORT | 0.6441 | 0.2519 |
+| Prophylaxis of postoperative... | CONTRADICT | 0.4468 | 0.5297 |
+| Effect of hydroxyethyl... | CONTRADICT | 0.3525 | 0.6375 |
+| Mental Health Conditions Among... | SUPPORT | 0.6451 | 0.3383 |
 
 The final LLM response synthesizes the retrieved evidence and explicitly
 references the source documents used to support its explanation.
 
 **Example generated response:**  
-> The evidence is mixed with respect to the claim that a deficiency of vitamin B12 increases blood levels of homocysteine.
+> The evidence is mixed with respect to the claim that dexamethasone decreases the risk of postoperative bleeding.
 
-> Some studies suggest that a high intake of folate can decrease plasma homocysteine levels (Document 1), while others indicate that elevated homocysteine levels are associated with increased risk of ischemic stroke, with no significant predictive effect of mild elevations of homocysteine (Document 2). 
+> Document 1 [23349986] found that dexamethasone was associated with an increased risk of postoperative bleeding, particularly at the 0.5 mg/kg dose. 
+> Document 2 [24211561] does not mention postoperative bleeding.
+> Document 3 [15948830] found that hydroxyethyl starch increased postoperative blood loss and risk of reoperation for bleeding, which contradicts the claim.
+> Document 4 [36288526] also found that hydroxyethyl starch increased postoperative blood loss and risk of reoperation for bleeding, which contradicts the claim.
+> Document 5 [18872233] does not mention postoperative bleeding.
 
-> Additionally, a study on patients with advanced chronic kidney disease found that treatment with high doses of folic acid and B vitamins did not lower mortality or reduce the incidence of vascular disease (Document 3). 
-
-> A meta-analysis of randomized controlled trials found that folic acid supplementation may have a modest benefit on stroke prevention in regions without folate fortification (Document 5). 
-
-> However, the relationship between vitamin B12 deficiency and homocysteine levels is not directly addressed in any of the provided documents.
+> There is not enough evidence from the provided abstracts to support or contradict the claim that dexamethasone decreases the risk of postoperative bleeding.
 
 
 ### End-to-End Output
