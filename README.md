@@ -74,7 +74,7 @@ Recall, Mean Reciprocal Rank (MRR), and Normalized Discounted Cumulative Gain
 | Method | MRR@3 | MRR@5 | MRR@7 | MRR@10 | MRR@20 | MRR@50 |
 | BM25 | 0.6111 | 0.6253 | 0.6308 | 0.6338 | 0.6364 | 0.6372 |
 | BM25 + QE | 0.3944 | 0.4271 | 0.4344 | 0.4409 | 0.4448 | 0.4457 |
-| BM25 + QE + Reranking | 0.5150 | 0.5280 | 0.5352 | 0.7538 | 0.5423 | 0.5432 |
+| BM25 + QE + Reranking | 0.5150 | 0.5280 | 0.5352 | 0.5380 | 0.5423 | 0.5432 |
 | BM25 + Reranking | **0.6556** | **0.6646** | **0.6693** | **0.6741** | **0.6759** | **0.6763** |
 
 | RM3 |  |  |  |  |  |  |
@@ -123,7 +123,7 @@ Representative outputs from the final pipeline are available in
 | Document | Verdict | Support Probability | Contradict Probability
 |---|---|---|---:|
 | British Journal of Nutrition... | SUPPORT | 0.5093 | 0.4903 |
-| Homocysteine and the risk of... | CONTRADICT | 0.4228 | 5772 |
+| Homocysteine and the risk of... | CONTRADICT | 0.4228 | 0.5772 |
 | Effect of homocysteine... | CONTRADICT | 0.3810 | 0.6190 |
 | Gene--nutrition interactions... | CONTRADICT | 0.4792 | 0.5208 |
 | The effect of folate... | CONTRADICT | 0.4870 | 0.5130 |
