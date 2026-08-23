@@ -18,7 +18,7 @@ documents,re-ranks them for better lexical relevance and determines whether the
 retrieved evidence supports or contradicts the claim, and generates a 
 grounded explanation using retrieval-augmented generation with explicit citation.
 
-The pipeline combines:
+The project explores:
 
 - **BM25** for scientific evidence retrieval
 - **Query expansion** experiments for improving retrieval
@@ -35,7 +35,7 @@ The pipeline combines:
 |---------|-------------|
 | **Evidence Retrieval** | Uses BM25 algorithm to initially retrieve candidate documents from the SciFact corpus. |
 | **Hybrid Re-ranking** | Refines candidate document ranking by combining cross-encoder semantic scores with BM25 lexical scores. |
-| **Verdict Classification** | Utilizes domain-specific models like SciBERT and BioBERT to classify evidence as SUPPORT, CONTRADICT, or NEI. |
+| **Verdict Classification** | Utilizes domain-specific models like BioBERT to classify evidence as SUPPORT, CONTRADICT, or NEI. |
 | **Grounded Generation** | Leverages RAG/LLM to produce grounded explanations with explicit citations to retrieved documents. |
 
 ---
