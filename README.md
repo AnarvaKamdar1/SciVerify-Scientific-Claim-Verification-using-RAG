@@ -67,7 +67,7 @@ Recall, Mean Reciprocal Rank (MRR), and Normalized Discounted Cumulative Gain
 | BM25 + QE + Reranking | 0.6689 | 0.7359 | 0.7717 | 0.8049 | 0.8560 | 0.8767 |
 | BM25 + Reranking | **0.7278** | **0.7697** | **0.7988** | **0.8387** | **0.8691** | **0.8841** |
 
-### 1. b) MRR
+#### 1. b) MRR
 
 | PRF with KL |  |  |  |  |  |  |
 |---|---:|---:|---:|---:|---:|---:|
@@ -85,7 +85,7 @@ Recall, Mean Reciprocal Rank (MRR), and Normalized Discounted Cumulative Gain
 | BM25 + QE + Reranking | 0.6061 | 0.6194 | 0.6251 | 0.6290 | 0.6326 | 0.6334 |
 | BM25 + Reranking | **0.6556** | **0.6646** | **0.6693** | **0.6741** | **0.6759** | **0.6763** |
 
-### 1. c) NDCG
+#### 1. c) NDCG
 
 | PRF with KL |  |  |  |  |  |  |
 |---|---:|---:|---:|---:|---:|---:|
@@ -105,7 +105,30 @@ Recall, Mean Reciprocal Rank (MRR), and Normalized Discounted Cumulative Gain
 
 ### 2. Verification Classifiers
 
+#### 2. a) SciBERT:
 
+SciBERT Model is a pre-defined BERT model specialized for the SciFact Dataset.
+The claasification metrics recorded are - 
+
+| Class | Precision | Recall | F1-Score | Support |
+|:------|----------:|-------:|---------:|--------:|
+| CONTRADICT | 0.5000 | 0.5897 | 0.5412 | 39 |
+| SUPPORT | 0.6667 | 0.6757 | 0.6711 | 74 |
+| NEI | 0.8448 | 0.7424 | 0.7903 | 66 |
+| **Accuracy** | | | **0.6816** | **179** |
+| **Macro Avg** | **0.6705** | **0.6693** | **0.6675** | **179** |
+| **Weighted Avg** | **0.6960** | **0.6816** | **0.6868** | **179** |
+
+#### 2. b) BioBERT
+
+| Class       | Precision | Recall | F1-Score | Support |
+|-------------|-----------|--------|----------|---------|
+| CONTRADICT  | 0.5870    | 0.6923 | 0.6353   | 39      |
+| SUPPORT     | 0.7857    | 0.7432 | 0.7639   | 74      |
+| NEI         | 0.8889    | 0.8485 | 0.8682   | 66      |
+| **Accuracy**|           |        | **0.7709** | **179** |
+| **Macro Avg** | 0.7539  | 0.7613 | 0.7558   | 179     |
+| **Weighted Avg** | 0.7805 | 0.7709 | 0.7743 | 179 |
 
 ## Results
 
