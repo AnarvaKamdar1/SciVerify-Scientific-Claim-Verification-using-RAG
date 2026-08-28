@@ -219,13 +219,19 @@ documents, verdict probabilities, and grounded responses, can be found in
 1. Query Expansion Decisions -
 
     a. The query expansion mechanisms were expected to increases retrieval metrics but actually underperformed.
+   
     b. The explanation is that the expansion techniques were pulling unnecessary documents which were later degrading re-ranking performance or adding noise to the top retrieved documents.
+   
     c. Since this dataset is based on bio-medical terms, even a slight variation of words can pull different documents which may not be optimal for retrieval.
 
 3. Verdict Design Decisions -
+   
     a. The verdict classifiers are trained as per (claim, doc) pair considering a single claim can have multiple docsuments related to it.
+   
     b. Although the verdict labels belong to individual sentences within the document, we are extending the labels to document-level.
+   
     c. For simplicity, we consider only those documents in which every labelled sentence belongs to the same verdict label(all sentences SUPPORT or CONTRADICT).
+   
     d. Claims having no documents as evidence are marked as NEI so the model knows when to be unsure.
 
 ## References
