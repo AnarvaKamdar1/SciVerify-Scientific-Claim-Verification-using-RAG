@@ -237,7 +237,7 @@ Claims without annotated evidence are used to construct NEI examples.
 
 The verifier receives the full abstract, rather than only the annotated evidence sentences. Thus, the model learns to determine whether the document as a whole supports, contradicts, or does not provide sufficient evidence for the claim.
 
-This is an intentional document-level formulation; passage-level evidence attribution is left as a potential future extension.
+This is an intentional document-level formulation. Passage-level evidence attribution is left as a potential future extension.
 
 4. LLM Inference
 
